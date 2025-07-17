@@ -87,6 +87,49 @@ ul {
   margin-left: 0;
 }
 
+.beneficios-bg {
+  background: #f5faff;
+  border-radius: 12px;
+  padding: 38px 40px 34px 40px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 12px rgba(33,118,255,0.03);
+}
+
+.soluciones-bg {
+  background: #f8fbff;
+  border-radius: 12px;
+  padding: 34px 38px 30px 38px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 12px rgba(33,118,255,0.02);
+}
+
+.features-list {
+  display: flex;
+  gap: 32px;
+  justify-content: flex-start;
+  margin-top: 18px;
+}
+.features-list > div {
+  flex: 1 1 0;
+  background: none;
+  border: none;
+  padding: 0 10px 0 0;
+  min-width: 180px;
+}
+.features-list h3 {
+  color: #2176ff;
+  margin-bottom: 6px;
+}
+.features-list p {
+  color: #444;
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.section {
+  margin-bottom: 36px;
+}
+
 .plan-cards {
   display: flex;
   gap: 18px;
@@ -152,6 +195,15 @@ footer {
 }
 
 @media (max-width: 900px) {
+  .beneficios-bg, .soluciones-bg {
+    padding: 16px 6vw;
+    border-radius: 8px;
+  }
+  .features-list {
+    flex-direction: column;
+    gap: 14px;
+  }
+
   .container {
     padding: 12px 2vw;
   }
